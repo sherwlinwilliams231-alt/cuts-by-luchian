@@ -1,0 +1,15 @@
+{
+  "id": "./",
+  "name": "CBL.Barber — Book Your Cut",
+  "short_name": "CBL.Barber",
+  "description": "Book barber services and message CBL.Barber directly.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#080808",
+  "theme_color": "#080808",
+  "orientation": "portrait",
+  "icons": [
+    {"src":"assets/cbl-logo.jpg","sizes":"any","type":"image/jpeg","purpose":"any"}
+  ]
+}

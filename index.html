@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080808">
+  <meta name="description" content="Book a haircut with CBL.Barber. Choose a service, request a time, and message your barber directly.">
+  <title>CBL.Barber | Book your cut</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="assets/cbl-logo.jpg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home"><img src="assets/cbl-logo.jpg" alt="CBL Barber logo"><span>CBL<span class="silver">.BARBER</span></span></a>
+    <button id="installBtn" class="install hidden" type="button">Install app</button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">BOOK • CHAT • GET CUT</p>
+        <h1>Your barber.<br><span>Your time. Your style.</span></h1>
+        <p class="lead">Book your next cut with CBL.Barber. Choose a service, request a time, and contact your barber directly.</p>
+        <div class="actions">
+          <a class="button primary" href="#booking">Book an appointment</a>
+          <a class="button secondary" id="chatTop" href="#">Message me</a>
+        </div>
+        <p class="small">Free to use. No account required.</p>
+      </div>
+      <div class="hero-logo"><img src="assets/cbl-logo.jpg" alt="Cuts by Luchian barber logo"></div>
+    </section>
+
+    <section class="section" id="booking">
+      <div class="section-heading">
+        <p class="eyebrow">YOUR NEXT CUT STARTS HERE</p>
+        <h2>Request a booking</h2>
+        <p>Submit your details and WhatsApp will open with your booking request ready to send.</p>
+      </div>
+      <form id="bookingForm" class="booking-card">
+        <label>Your name<input id="clientName" required maxlength="60" placeholder="Enter your name"></label>
+        <label>Choose a service
+          <select id="service" required>
+            <option value="Haircut — R150">Haircut — R150 (edit price)</option>
+            <option value="Fade — R120">Fade — R120 (edit price)</option>
+            <option value="Beard trim — R80">Beard trim — R80 (edit price)</option>
+            <option value="Cut + beard — R200">Cut + beard — R200 (edit price)</option>
+            <option value="Other / ask barber">Other / ask barber</option>
+          </select>
+        </label>
+        <div class="two-col">
+          <label>Preferred date<input id="date" type="date" required></label>
+          <label>Preferred time<input id="time" type="time" required></label>
+        </div>
+        <label>Where would you like the haircut?
+          <select id="serviceLocation" required>
+            <option value="At the barber's shop/home base">At the barber's shop/home base</option>
+            <option value="Barber to travel to my home (travel fee may apply)">Home visit (travel fee may apply)</option>
+            <option value="Discuss location with barber">Discuss location with barber</option>
+          </select>
+        </label>
+        <label>Your area or meeting location (don't include private details unless needed)<input id="clientArea" maxlength="160" placeholder="Suburb / public meeting area"></label>
+        <label>Extra details (optional)<textarea id="notes" rows="3" maxlength="400" placeholder="Style request, package, or anything I should know"></textarea></label>
+        <button class="button primary full" type="submit">Send booking request on WhatsApp</button>
+        <p class="fine">Your appointment is not confirmed until the barber replies.</p>
+      </form>
+    </section>
+
+    <section class="features section">
+      <article><div class="icon">✂</div><h3>Book a cut</h3><p>Send a clear appointment request with your chosen service and time.</p></article>
+      <article><div class="icon">☏</div><h3>Message directly</h3><p>Talk to your barber on WhatsApp about availability, prices, and styles.</p></article>
+      <article><div class="icon">⌖</div><h3>Find the barber</h3><p>Open directions to the barber's location or share your own location in chat.</p></article>
+    </section>
+
+    <section class="location section" id="location">
+      <div>
+        <p class="eyebrow">GET DIRECTIONS</p>
+        <h2>Find CBL.Barber</h2>
+        <p>Tap below to open the map. Replace the example search with your exact shop address or area in <code>app.js</code>.</p>
+        <a class="button secondary" id="mapBtn" href="#" target="_blank" rel="noopener">Open map directions</a>
+      </div>
+      <div class="map-card"><div class="map-pin">⌖</div><p>YOUR BARBER • YOUR AREA</p><span>Location link is configurable</span></div>
+    </section>
+
+    <section class="cta">
+      <p class="eyebrow">LOOK GOOD • FEEL BETTER</p>
+      <h2>Ready for a fresh cut?</h2>
+      <p>Message CBL.Barber and let's find a time that works.</p>
+      <a class="button primary" id="chatBottom" href="#">Chat with your barber</a>
+    </section>
+  </main>
+
+  <footer><span>© <span id="year"></span> CBL.Barber</span><span>Built for the next level.</span></footer>
+  <script src="app.js"></script>
+</body>
+</html>
