@@ -1,96 +1,44 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-ZA">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#080808">
-  <meta name="description" content="Book a haircut with CBL.Barber. Choose a service, request a time, and message your barber directly.">
-  <title>CBL.Barber | Book your cut</title>
-  <link rel="manifest" href="manifest.json">
-  <link rel="icon" href="assets/cbl-logo.jpg">
-  <link rel="stylesheet" href="styles.css">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#090a0c">
+<meta name="description" content="CutsByLuchian — house-call barber in Heidedal, Bloemfontein. Book fades, buzz cuts, lineups, beard trims and more.">
+<meta property="og:title" content="CutsByLuchian | CBL.Barber"><meta property="og:description" content="Book your next cut in Heidedal and around Bloemfontein.">
+<link rel="manifest" href="manifest.json"><link rel="icon" href="assets/cbl-icon-192.png" type="image/png"><link rel="apple-touch-icon" href="assets/cbl-icon-180.png"><link rel="stylesheet" href="styles.css">
+<title>CutsByLuchian | CBL.Barber</title>
 </head>
 <body>
-  <header class="topbar">
-    <a class="brand" href="#home"><img src="assets/cbl-logo.jpg" alt="CBL Barber logo"><span>CBL<span class="silver">.BARBER</span></span></a>
-    <button id="installBtn" class="install hidden" type="button">Install app</button>
-  </header>
-
-  <main>
-    <section class="hero" id="home">
-      <div class="hero-copy">
-        <p class="eyebrow">BOOK • CHAT • GET CUT</p>
-        <h1>Your barber.<br><span>Your time. Your style.</span></h1>
-        <p class="lead">Book your next cut with CBL.Barber. Choose a service, request a time, and contact your barber directly.</p>
-        <div class="actions">
-          <a class="button primary" href="#booking">Book an appointment</a>
-          <a class="button secondary" id="chatTop" href="#">Message me</a>
-        </div>
-        <p class="small">Free to use. No account required.</p>
-      </div>
-      <div class="hero-logo"><img src="assets/cbl-logo.jpg" alt="Cuts by Luchian barber logo"></div>
-    </section>
-
-    <section class="section" id="booking">
-      <div class="section-heading">
-        <p class="eyebrow">YOUR NEXT CUT STARTS HERE</p>
-        <h2>Request a booking</h2>
-        <p>Submit your details and WhatsApp will open with your booking request ready to send.</p>
-      </div>
-      <form id="bookingForm" class="booking-card">
-        <label>Your name<input id="clientName" required maxlength="60" placeholder="Enter your name"></label>
-        <label>Choose a service
-          <select id="service" required>
-            <option value="Haircut — R150">Haircut — R150 (edit price)</option>
-            <option value="Fade — R120">Fade — R120 (edit price)</option>
-            <option value="Beard trim — R80">Beard trim — R80 (edit price)</option>
-            <option value="Cut + beard — R200">Cut + beard — R200 (edit price)</option>
-            <option value="Other / ask barber">Other / ask barber</option>
-          </select>
-        </label>
-        <div class="two-col">
-          <label>Preferred date<input id="date" type="date" required></label>
-          <label>Preferred time<input id="time" type="time" required></label>
-        </div>
-        <label>Where would you like the haircut?
-          <select id="serviceLocation" required>
-            <option value="At the barber's shop/home base">At the barber's shop/home base</option>
-            <option value="Barber to travel to my home (travel fee may apply)">Home visit (travel fee may apply)</option>
-            <option value="Discuss location with barber">Discuss location with barber</option>
-          </select>
-        </label>
-        <label>Your area or meeting location (don't include private details unless needed)<input id="clientArea" maxlength="160" placeholder="Suburb / public meeting area"></label>
-        <label>Extra details (optional)<textarea id="notes" rows="3" maxlength="400" placeholder="Style request, package, or anything I should know"></textarea></label>
-        <button class="button primary full" type="submit">Send booking request on WhatsApp</button>
-        <p class="fine">Your appointment is not confirmed until the barber replies.</p>
-      </form>
-    </section>
-
-    <section class="features section">
-      <article><div class="icon">✂</div><h3>Book a cut</h3><p>Send a clear appointment request with your chosen service and time.</p></article>
-      <article><div class="icon">☏</div><h3>Message directly</h3><p>Talk to your barber on WhatsApp about availability, prices, and styles.</p></article>
-      <article><div class="icon">⌖</div><h3>Find the barber</h3><p>Open directions to the barber's location or share your own location in chat.</p></article>
-    </section>
-
-    <section class="location section" id="location">
-      <div>
-        <p class="eyebrow">GET DIRECTIONS</p>
-        <h2>Find CBL.Barber</h2>
-        <p>Tap below to open the map. Replace the example search with your exact shop address or area in <code>app.js</code>.</p>
-        <a class="button secondary" id="mapBtn" href="#" target="_blank" rel="noopener">Open map directions</a>
-      </div>
-      <div class="map-card"><div class="map-pin">⌖</div><p>YOUR BARBER • YOUR AREA</p><span>Location link is configurable</span></div>
-    </section>
-
-    <section class="cta">
-      <p class="eyebrow">LOOK GOOD • FEEL BETTER</p>
-      <h2>Ready for a fresh cut?</h2>
-      <p>Message CBL.Barber and let's find a time that works.</p>
-      <a class="button primary" id="chatBottom" href="#">Chat with your barber</a>
-    </section>
-  </main>
-
-  <footer><span>© <span id="year"></span> CBL.Barber</span><span>Built for the next level.</span></footer>
-  <script src="app.js"></script>
-</body>
-</html>
+<header class="hero">
+<img class="brand-logo" src="assets/cbl-logo.jpg" alt="Original Cuts by Luchian silver barber logo">
+<p class="eyebrow">HOUSE-CALL BARBER · HEIDEDAL, BLOEMFONTEIN 🇿🇦</p>
+<h1>CutsByLuchian</h1><p class="tagline">Book. Connect. Get Cut.</p>
+<p class="intro">Fresh cuts, clean lineups, and house calls around Bloemfontein.</p>
+<a class="button silver" href="#booking">Book an appointment</a>
+</header>
+<main>
+<section class="section"><h2>Price list</h2><p class="muted">Prices in South African rand (ZAR). House-call travel fees are added to the haircut price.</p>
+<div class="price-card"><h3>✂️ Cuts</h3>
+<div class="price-row"><span>Taper Fade</span><strong>R70</strong></div><div class="price-row"><span>Mid Fade</span><strong>R70</strong></div><div class="price-row"><span>Skin Fade</span><strong>R70</strong></div><div class="price-row"><span>Buzz Cut</span><strong>R50</strong></div><div class="price-row"><span>Line Up Only</span><strong>R30</strong></div></div>
+<div class="price-card"><h3>🔥 Extras</h3><div class="price-row"><span>Beard Trim</span><strong>R40</strong></div><div class="price-row"><span>Waves Styling</span><strong>R30</strong></div><div class="price-row"><span>Eyebrows</span><strong>R20</strong></div></div>
+<div class="price-card"><h3>🚗 House calls</h3><div class="price-row"><span>Heidedal</span><strong>+R20</strong></div><div class="price-row"><span>Around Bloemfontein</span><strong>+R30–R50</strong></div><p class="small">Confirm the exact travel fee and total with Luchian before the appointment.</p></div>
+</section>
+<section class="section dark-section" id="booking"><h2>Book your cut</h2><p class="muted">Send a booking request through WhatsApp. Your appointment is confirmed only when Luchian replies.</p>
+<form id="bookingForm">
+<label for="customerName">Your name</label><input id="customerName" name="customerName" autocomplete="name" required placeholder="Enter your name">
+<label for="customerPhone">Your phone number</label><input id="customerPhone" name="customerPhone" autocomplete="tel" type="tel" required placeholder="e.g. 07X XXX XXXX">
+<label for="service">Choose a service</label><select id="service" name="service" required><option value="">Choose a service</option><option>Taper Fade — R70</option><option>Mid Fade — R70</option><option>Skin Fade — R70</option><option>Buzz Cut — R50</option><option>Line Up Only — R30</option><option>Beard Trim — R40</option><option>Waves Styling — R30</option><option>Eyebrows — R20</option><option>Haircut + extra (ask for total)</option></select>
+<label for="location">House-call area</label><select id="location" name="location" required><option value="">Choose location</option><option>Heidedal — add R20 house-call fee</option><option>Around Bloemfontein — add R30–R50 house-call fee</option><option>I'll discuss the location with Luchian</option></select>
+<label for="date">Preferred date</label><input id="date" name="date" type="date" required><label for="time">Preferred time</label><input id="time" name="time" type="time" required>
+<label for="address">Area / meeting point (optional)</label><input id="address" name="address" placeholder="Your suburb or meeting point">
+<label for="notes">Extra details (optional)</label><textarea id="notes" name="notes" rows="3" placeholder="Style requests or questions"></textarea>
+<button class="button silver full" type="submit">Send booking request on WhatsApp</button></form><p id="formStatus" class="small" aria-live="polite"></p>
+</section>
+<section class="section" id="location"><h2>Find CutsByLuchian</h2><p class="muted">Serving Heidedal and surrounding Bloemfontein. Open directions, or choose to share your location with Luchian for a house-call booking.</p>
+<div class="map-frame"><iframe title="Map of Heidedal, Bloemfontein" src="https://maps.google.com/maps?q=Heidedal%2C%20Bloemfontein%2C%20South%20Africa&t=&z=13&ie=UTF8&iwloc=&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
+<a class="button silver full" href="https://www.google.com/maps/dir/?api=1&destination=Heidedal%2C%20Bloemfontein%2C%20South%20Africa" target="_blank" rel="noopener">Get directions to service area</a>
+<button class="button outline full" id="shareLocationBtn" type="button">📍 Share my location with Luchian</button><p id="locationStatus" class="small" aria-live="polite">Your location is only accessed if you tap the button and allow your browser to share it.</p>
+<div class="contact-card"><p><strong>Service area:</strong> Heidedal, Bloemfontein, South Africa</p><p><strong>Instagram:</strong> <a href="https://www.instagram.com/cutsbyluchian/" target="_blank" rel="noopener">@cutsbyluchian</a></p><a class="button outline full" href="https://www.instagram.com/cutsbyluchian/" target="_blank" rel="noopener">Open Instagram</a></div>
+</section>
+</main><footer><p><strong>CutsByLuchian · CBL.Barber</strong></p><p class="small">Location sharing is optional. Booking requests must be confirmed by the barber.</p></footer>
+<script src="app.js"></script></body></html>

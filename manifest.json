@@ -1,15 +1,24 @@
 {
-  "id": "./",
-  "name": "CBL.Barber — Book Your Cut",
+  "name": "CBL.Barber \u2014 CutsByLuchian",
   "short_name": "CBL.Barber",
-  "description": "Book barber services and message CBL.Barber directly.",
+  "description": "Book CutsByLuchian, house-call barber in Heidedal, Bloemfontein.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#080808",
-  "theme_color": "#080808",
-  "orientation": "portrait",
+  "background_color": "#090a0c",
+  "theme_color": "#090a0c",
   "icons": [
-    {"src":"assets/cbl-logo.jpg","sizes":"any","type":"image/jpeg","purpose":"any"}
+    {
+      "src": "assets/cbl-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/cbl-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
   ]
 }

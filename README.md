@@ -1,37 +1,27 @@
-# CBL.Barber — starter app
+# CBL.Barber — Silver PWA with map and location sharing
 
-This is a responsive, installable Progressive Web App (PWA) starter for CBL.Barber. It works on phones and computers through a web browser. Booking requests open WhatsApp with the details filled in, and the map button opens Google Maps.
+## Included
+- Original black-and-silver logo and app icons.
+- Updated haircut, extras, and house-call prices.
+- Booking form opens WhatsApp.
+- Embedded Google map of the general service area: Heidedal, Bloemfontein.
+- Directions link to the service area.
+- Optional customer location sharing: user taps the button, grants browser permission, and WhatsApp opens with a Google Maps link. The customer must press Send.
+- Installable PWA manifest and service worker.
 
-## First: personalise it
-1. Open `app.js` in a text editor.
-2. Replace `27YOURNUMBERHERE` with your WhatsApp number in international format, digits only. South Africa example: `27821234567`.
-3. Change `CBL Barber, South Africa` to your public shop address or area in `BARBER_MAP_QUERY`.
-4. Open `index.html` and change service names/prices to your real prices.
-5. Replace `assets/cbl-logo.jpg` with your final square logo if you want to use another version.
+## Prices
+Taper Fade R70; Mid Fade R70; Skin Fade R70; Buzz Cut R50; Line Up Only R30; Beard Trim R40; Waves Styling R30; Eyebrows R20; Heidedal travel +R20; around Bloemfontein travel +R30–R50.
 
-## Test it free
-For an easy route, upload this folder to a GitHub repository and enable GitHub Pages, or deploy the folder using Netlify or Cloudflare Pages. The site must be hosted over HTTPS for install features to work reliably. Do not just double-click `index.html` if testing install/offline features.
+## Publish
+1. Download and extract the ZIP.
+2. Open your GitHub repository: https://github.com/sherwlinwilliams231-alt/cuts-by-luchian
+3. Upload the contents of this folder into the repository root, replacing matching files and keeping the `assets` folder.
+4. Commit to `main`; check Settings → Pages publishes `main` / `/(root)`.
+5. Wait for deployment, open your GitHub Pages HTTPS site in Chrome, then use ⋮ → Install app or Add to Home screen.
 
-### GitHub Pages quick route
-1. Create/sign in to GitHub and make a new public repository named `cbl-barber`.
-2. Upload the contents of this folder (not the ZIP itself) to the repository's root.
-3. Open repository **Settings → Pages**.
-4. Under build/deployment, select **Deploy from a branch**, choose `main` and `/(root)`, then Save.
-5. Wait for the published HTTPS address shown there. Open it on your phone and test the booking form and WhatsApp.
-
-### Put it on Google Play
-A PWA website is not automatically listed in Google Play. Once the HTTPS site works:
-1. Visit PWABuilder (https://www.pwabuilder.com/) and enter your published website URL.
-2. Follow its Android package workflow and read any current requirements it reports.
-3. Test the generated package on a real Android device.
-4. Create a Google Play Console developer account, complete identity/app details, upload the package, add screenshots/privacy information, and submit it for review. Google may require testing tracks before public release. Developer registration may have a fee and policy requirements; check the current official Play Console instructions.
-5. For Apple App Store, use a suitable iOS wrapper/build workflow and an Apple Developer account. For Windows, the hosted web app can be opened in any modern browser; a separate Windows store package is optional. A website alone does not automatically become an App Store listing.
-
-## How this makes money
-The app itself is free to clients. You can earn from paid appointments, deposits, add-on services, and repeat bookings. The starter does not process payments, block unavailable appointment times, or automatically collect bookings in a database; it sends requests to WhatsApp so you can confirm manually. For an automatic calendar with conflict prevention, a client database, deposits, and a directory for other barbers, add a secure booking backend and payment provider before launch.
-
-## Important limitations
-- Locator currently opens Google Maps using the configured address. It does not track customers or show their live locations. Live customer location requires explicit user permission, secure handling, and a backend; do not track anyone without clear consent.
-- WhatsApp messaging uses the client's WhatsApp app. It does not silently send messages.
-- The booking is a request, not a confirmed appointment.
-- Before publishing, add a privacy policy, verify contact details and pricing, use your own rights-cleared logo/photos, and test accessibility and mobile layout.
+## Important
+- This ZIP does not directly modify the live website; you must upload it.
+- Location permission works only on HTTPS or localhost and requires the customer to consent. See MDN Geolocation API documentation.
+- The map marks the general service area, not a private address. Do not publish your home address.
+- WhatsApp number is configured as 27602455980; verify before publishing.
+- Booking requests are not automatically confirmed. There is no live calendar, online payment, customer database, or background tracking.
