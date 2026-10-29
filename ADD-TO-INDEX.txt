@@ -1,0 +1,29 @@
+UPLOAD ALL SIX IMAGE/CONFIG FILES IN THIS PACKAGE TO THE SAME ROOT LEVEL AS index.html.
+Then edit the EXISTING index.html; do not replace the whole page.
+
+1) Inside <head> add:
+<link rel="manifest" href="./manifest.json">
+<link rel="icon" type="image/png" href="./favicon.png">
+<link rel="apple-touch-icon" href="./icon-192.png">
+<meta name="theme-color" content="#050505">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="CBL.Barber">
+
+2) In the visible header/body where the logo should appear, add:
+<img src="./cbl-logo.png" alt="CutsByLuchian CBL Barber logo" class="cbl-brand-logo">
+
+3) Add this CSS in your existing stylesheet or inside a <style> block in <head>:
+.cbl-brand-logo { display:block; width:min(180px, 55vw); height:auto; object-fit:contain; margin:0 auto; }
+
+4) Just before </body>, add:
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function () {
+    navigator.serviceWorker.register('./service-worker.js', {scope:'./'})
+      .catch(function (e) { console.error('Service worker registration failed', e); });
+  });
+}
+</script>
+
+This flat package avoids folders, which can be easier to upload from a phone. It does NOT contain a replacement index.html; your existing website design, map, booking form, and prices remain in place.
